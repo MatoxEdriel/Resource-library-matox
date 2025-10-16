@@ -1,3 +1,2 @@
-import { PrismaClient as GeneratedPrismaClient } from '../generated/prisma';
-
-export const prisma = new GeneratedPrismaClient();
+// eslint-disable-next-line prettier/prettier
+export * from './prisma';
