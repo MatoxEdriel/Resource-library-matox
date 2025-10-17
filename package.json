@@ -1,13 +1,14 @@
 {
   "name": "@novaCode/resource",
   "version": "0.0.1",
-  "description": "",
+  "description": "Libreria compartida con modelos y Dtos para microservicios practica",
   "author": "",
   "private": false,
   "license": "UNLICENSED",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "generate":"prisma generate",
     "build": "tsc -p tsconfig.build.json",
     "prepublishOnly": "yarn build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
