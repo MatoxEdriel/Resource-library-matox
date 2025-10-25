@@ -1,10 +1,14 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+// src/prisma.ts
 
+import { PrismaClient } from "../generated/prisma";
 
-import { PrismaClient } from "../generated/prisma/index.js";
-
+// exporta una instancia global de Prisma
+// eslint-disable-next-line @typescript-eslint/no-unsafe-call
 export const prisma = new PrismaClient();
 
-export * from "../generated/prisma/index.js"
+export * from "../generated/prisma"
 
 console.log("Prisma Client cargado para la libreria de Matox")
 

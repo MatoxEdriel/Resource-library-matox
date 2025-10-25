@@ -1,7 +1,7 @@
 {
   "name": "@novaCode/resource",
   "version": "0.0.2",
-  "type": "module",
+  "type": "commonjs",
   "description": "Libreria compartida con modelos y Dtos para microservicios practica",
   "author": "",
   "private": false,
@@ -10,7 +10,8 @@
   "types": "./src/index.ts",
   "exports": {
     ".": {
-      "import": "./src/index.ts"
+      "import": "./src/index.ts",
+      "require": "./src/index.ts"
     }
   },
   "scripts": {
