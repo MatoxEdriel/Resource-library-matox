@@ -16,7 +16,8 @@
   "scripts": {
     "generate": "prisma generate",
     "prepare": "yarn build",
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json && yarn copy:prisma",
+    "copy:prisma": "copyfiles -u 1 \"src/prisma.ts\" dist/",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint \"src/**/*.ts\" --fix"
   },
