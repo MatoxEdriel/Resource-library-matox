@@ -9,6 +9,18 @@
     "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "paths": {
+      "@novaCode/resource/*": [
+        "src/*",
+        "dto/*",
+        "enums/*",
+        "filters/*",
+        "helpers/*",
+        "interfaces/*",
+        "libraries/*",
+        "prisma/*"
+      ]
+    },
     "allowSyntheticDefaultImports": true,
     "target": "ES2023",
     "sourceMap": true,
@@ -21,5 +33,22 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "noFallthroughCasesInSwitch": false
-  }
+  },
+  "include": [
+    "src/**/*",
+    "dto/**/*",
+    "enums/**/*",
+    "filters/**/*",
+    "helpers/**/*",
+    "interfaces/**/*",
+    "libraries/**/*",
+    "prisma/**/*"
+  ],
+  //Ejemplo si se desea traer todo lo importado desde la raiz
+  //"include": ["**/*.ts"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "test"
+  ]
 }
