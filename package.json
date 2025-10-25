@@ -17,9 +17,8 @@
   },
   "scripts": {
     "generate": "prisma generate",
-    "prepare": "yarn build",
-    "build": "tsc -p tsconfig.json && yarn copy:prisma",
-    "copy:prisma": "copyfiles -u 1 \"src/prisma.ts\" dist/",
+    "prepare": "yarn prisma:setup",
+    "prisma:setup": "yarn generate && echo 'Prisma Client generado automáticamente para @novaCode/resource'",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint \"src/**/*.ts\" --fix"
   },
