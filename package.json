@@ -1,21 +1,21 @@
 {
   "name": "@novaCode/resource",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "commonjs",
   "description": "Libreria compartida con modelos y Dtos para microservicios practica",
-  "author": "",
+  "author": "Gabriel Campoverde",
   "private": false,
   "license": "UNLICENSED",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
   "exports": {
     ".": {
-      "import": "./src/index.ts",
-      "require": "./src/index.ts"
+      "import": "./src/index.ts"
     }
   },
   "scripts": {
     "generate": "prisma generate",
+    "prepare": "yarn build",
     "build": "tsc -p tsconfig.json",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint \"src/**/*.ts\" --fix"
@@ -33,10 +33,11 @@
     "class-validator": "^0.14.0"
   },
   "devDependencies": {
-    "typescript": "^5.9.3",
-    "ts-node": "^10.9.2",
+    "copyfiles": "^2.4.1",
     "eslint": "^9.18.0",
     "prettier": "^3.4.2",
-    "prisma": "^6.16.3"
+    "prisma": "^6.16.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   }
 }
