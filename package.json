@@ -20,7 +20,6 @@
     "copy:prisma": "copyfiles -u 1 \"generated/prisma/**/*\" dist/generated/prisma",
     "copy:src": "copyfiles -u 1 \"src/prisma.ts\" dist/",
     "build": "tsc -p tsconfig.json && yarn copy:src && yarn copy:prisma",
-    "prepare": "yarn build",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint \"src/**/*.ts\" --fix"
   },
