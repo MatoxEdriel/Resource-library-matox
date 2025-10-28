@@ -1,2 +1,1 @@
-export * from './prisma'
-export * from '../filters'
+export * from './prisma.service'
