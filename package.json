@@ -17,8 +17,9 @@
   },
   "scripts": {
     "generate": "prisma generate",
-    "format": "prettier --write \"src/**/*.ts\"",
-    "lint": "eslint \"src/**/*.ts\" --fix"
+    "copy:prisma": "copyfiles -u 1 \"generated/prisma/**/*\" compiled/generated/prisma",
+    "copy:src": "copyfiles -u 1 \"src/**/*.ts\" compiled/",
+    "build": "yarn generate && yarn copy:src && yarn copy:prisma"
   },
   "dependencies": {
     "@nestjs/common": "^11.1.8",
