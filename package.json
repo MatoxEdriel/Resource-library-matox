@@ -17,9 +17,10 @@
   },
   "scripts": {
     "generate": "prisma generate",
-    "copy:prisma": "copyfiles -u 1 \"generated/prisma/**/*\" compiled/generated/prisma",
+    "copy": "copyfiles -u 1 dist/**/* ../plants/node_modules/@novaCode/resource",
     "copy:src": "copyfiles -u 1 \"src/**/*.ts\" compiled/",
-    "build": "yarn generate && yarn copy:src && yarn copy:prisma"
+    "build": "yarn generate && yarn copy:src && yarn copy:prisma",
+    "prepare": "yarn build"
   },
   "dependencies": {
     "@nestjs/common": "^11.1.8",
