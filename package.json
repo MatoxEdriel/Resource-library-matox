@@ -5,18 +5,19 @@
   "author": "Gabriel Campoverde",
   "license": "UNLICENSED",
   "private": false,
-  "main": "src/main.js",
-  "types": "src/main.d.ts",
-  "files": [
-    "src/*"
-  ],
+  "main": "main.js",
+  "types": "main.d.ts",
   "scripts": {
-    "prepare": "npx -p typescript tsc --build && copyfiles -u 1 prisma/**/*.prisma src/prisma"
+    "prepare": "npx -p typescript tsc --build && copyfiles -u 1 prisma/**/*.prisma prisma"
   },
   "engines": {
     "node": ">=20.12.2",
     "npm": ">=10.5.0"
   },
+  "files": [
+    "*",
+    "prisma/**/*"
+  ],
   "dependencies": {
     "@nestjs/common": "^11.1.8",
     "@nestjs/core": "^11.0.0",
