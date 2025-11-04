@@ -8,7 +8,7 @@
   "main": "main.js",
   "types": "main.d.ts",
   "scripts": {
-    "prepare": "npx -p typescript tsc --build && copyfiles -u 1 prisma/**/*.prisma prisma"
+    "prepare": "npx -p typescript tsc --build && npx prisma generate && copyfiles -u 1 prisma/**/*.prisma prisma"
   },
   "engines": {
     "node": ">=20.12.2",
