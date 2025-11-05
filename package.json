@@ -5,8 +5,8 @@
   "author": "Gabriel Campoverde",
   "license": "UNLICENSED",
   "private": false,
-  "main": "main.js",
-  "types": "main.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "prepare": "npx -p typescript tsc --build && npx prisma generate && copyfiles -u 1 prisma/**/*.prisma prisma"
   },
