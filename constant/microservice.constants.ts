@@ -5,3 +5,14 @@ export const INVOICE_CMD = {
     GENERATE_PDF: { cmd: 'generate-pdf' }
 
 }
+
+export const CUSTOMER_CMD = {
+    CREATE: { cmd: 'createCustomer' },
+    FIND_ALL: { cmd: 'findAllCustomers' },
+    FIND_ONE_CUSTOMER: { cmd: 'findOneCustomer' },
+    UPDATE: { cmd: 'updateCustomer' },
+    DELETE: { cmd: 'removeCustomer' }
+}
+
+
+
