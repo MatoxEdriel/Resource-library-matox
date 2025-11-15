@@ -1,32 +1,8 @@
-
 export class ManageResponse {
-
-
-    static sucess(data: any, message = 'Operacion Existosa') {
-
+    static microservice(data: any, meta: any) {
         return {
-            success: true,
-            message,
-            data
-
-        }
-
+            data,
+            ...meta,
+        };
     }
-
-    static error(error: any, message = 'Error en la operacion') {
-
-        return {
-            success: false,
-            message,
-            error
-
-        }
-
-
-    }
-
-
-
-
-
 }
