@@ -42,9 +42,6 @@ export class HttpExceptionFilter implements ExceptionFilter {
             details,
             path: request.url,
             timestamp: new Date().toISOString()
-
-
-
         })
 
     }
